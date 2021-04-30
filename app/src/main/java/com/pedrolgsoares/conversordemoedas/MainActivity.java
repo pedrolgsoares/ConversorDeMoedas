@@ -64,7 +64,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        //            Para sair do app
         if (v.getId() == R.id.converter) {
             String valor = this.mviewHolder.valorBR.getText().toString();
             if ("".equals(valor)) {
@@ -75,7 +74,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 this.mviewHolder.valorUSD.setText(String.format("%.2f", valorReal * 5.62));
             }
         } else {
-//            Sair da aplicação
+//           Implementar método para encerrar a aplicação
         }
     }
 //   Limpa os valores quando o app inicia
